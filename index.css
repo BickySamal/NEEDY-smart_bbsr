@@ -1,0 +1,250 @@
+*{
+    border:0;margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    padding: 1rem 8rem;
+}
+
+.navbar-brand{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.same{
+    font-style: italic;
+}
+
+/* navlink */
+#navbarSupportedContent > ul > li:nth-child(n) > a
+{
+    color:#fff;
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover
+{
+    color:lightgreen;
+}
+
+#navbarSupportedContent > button{
+    background:lightgreen;
+    border-radius: 2rem;
+}
+
+/* video and over video */
+.vid{
+    width:100%;height:100vh;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.vid video{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.vid .on-video{
+    position: relative;
+    color: whitesmoke;
+}
+.vid .on-video h2{
+    font-weight: bolder;
+}
+.vid .on-video p{
+    width: 75%;
+    font-size: 1.2rem; 
+}
+.vid .on-video a{
+    background:lightgreen;
+    border-radius: 2rem;
+    padding: 8px;
+    text-decoration: none;
+}
+.vid .on-video a:hover{
+    background:#fff;
+}
+
+
+/* 
+.row{
+    align-items: center;
+} */
+
+.about{
+    background:black;
+}
+.discovery{
+    background: #fff;
+}
+.about .left{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+.about .left h5{
+    color: lightgreen;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.about .left h2{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.about .left p{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 330;
+}
+.about .left a{
+    background:lightgreen;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: .6rem 1.4rem;
+    color:#111;
+}
+
+.discovery .left{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+.discovery .left h5{
+    color: lightgreen;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.discovery .left h2{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.discovery .left p{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 330;
+}
+.discovery .left a{
+    background:lightgreen;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: .6rem 1.4rem;
+    color:#111;
+}
+.service{
+    position: relative;
+    background: black;
+}
+.service .row{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+   
+    padding: auto;
+    /* mx-auto justify-contente-center align-items-center text-center */
+}
+.service h3{
+    font-weight: bold;
+}
+
+.service .one, .two, .three{
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}    
+
+.about .left{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+    
+}
+.signup .left h5{
+    color: lightgreen;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.signup .left h2{
+    color:black;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.signup .left p{
+    color: black ;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.signup .left a{
+    background:lightgreen;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: .6rem 1.4rem;
+    color:#111;
+}
+
+/* footer */
+
+body > footer > ul > li:nth-child(2) > a{
+    background:lightgreen;
+    border-radius: 2rem;
+    border: none;
+}
+.links{
+    justify-content: flex-start;
+}
+
+@media screen and (max-width:980px){
+    .navbar{
+        padding: 1rem;
+    }
+    #navbarSupportedContent > ul {
+        padding-left: .5rem;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a
+    {
+        color:#fff;
+        
+        padding:  0.8rem 0;
+    }
+    /* middle section */
+    .vid .on-video h2{
+        
+        font-size: 2.5rem; 
+    }
+    .vid .on-video p{
+        
+        font-size: 1rem; 
+    }
+    .vid .on-video a{
+      font-size: .8rem;
+    }
+}
